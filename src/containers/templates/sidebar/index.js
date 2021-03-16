@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {
   CCreateElement,
@@ -15,11 +15,12 @@ import {
 import CIcon from '@coreui/icons-react'
 
 // sidebar nav config
-import navigation from './_nav'
+import privilegesMenu from './_nav'
 
 const TheSidebar = () => {
   const dispatch = useDispatch()
   const show = useSelector(state => state.sidebarShow)
+  const [privileges] = useState('operator')
 
   return (
     <CSidebar
@@ -41,7 +42,7 @@ const TheSidebar = () => {
       <CSidebarNav>
 
         <CCreateElement
-          items={navigation}
+          items={privilegesMenu(privileges)}
           components={{
             CSidebarNavDivider,
             CSidebarNavDropdown,

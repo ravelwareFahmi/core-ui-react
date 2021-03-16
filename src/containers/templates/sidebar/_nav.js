@@ -1,7 +1,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 
-const _nav =  [
+const _nav_admin =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
@@ -12,6 +12,7 @@ const _nav =  [
       text: 'NEW',
     }
   },
+
   {
     _tag: 'CSidebarNavTitle',
     _children: ['Theme']
@@ -60,4 +61,32 @@ const _nav =  [
   },
 ]
 
-export default _nav
+const _nav_operator =  [
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Dashboard',
+    to: '/dashboard',
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    badge: {
+      color: 'info',
+      text: 'NEW',
+    }
+  }
+]
+
+const privilegesMenu = (role) => {
+
+  if (role === 'admin') {
+    return (
+      _nav_admin
+    )
+  } else {
+    return (
+      _nav_operator
+    )
+  }
+}
+
+
+
+export default privilegesMenu

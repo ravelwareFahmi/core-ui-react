@@ -11,7 +11,7 @@ import { userPrivileges } from 'src/resuableFunction/userPrivileges'
 
 const TheContent = () => {
   const [login] = useState(true)
-  const [userNow] = useState('operator')
+  const [userNow] = useState('admin')
 
 
   return (
