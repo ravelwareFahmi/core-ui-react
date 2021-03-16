@@ -7,7 +7,7 @@ import {
 import { CContainer, CFade } from '@coreui/react'
 // routesAdmin config
 import Spinner from 'src/component/molecules/Spinner'
-import { userPrivileges } from 'src/resuableFunction/userPrivileges'
+import { roleRoutes } from 'src/resuableFunction/roleRoutes'
 
 const TheContent = () => {
   const [login] = useState(true)
@@ -19,7 +19,7 @@ const TheContent = () => {
       <CContainer fluid>
         <Suspense fallback={<Spinner />}>
           <Switch>
-            { userPrivileges(userNow).map((route, idx) => {
+            { roleRoutes(userNow).map((route, idx) => {
               return route.component && (
                 <Route
                   key={idx}

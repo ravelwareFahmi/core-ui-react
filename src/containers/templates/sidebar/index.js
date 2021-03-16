@@ -20,7 +20,7 @@ import privilegesMenu from './_nav'
 const TheSidebar = () => {
   const dispatch = useDispatch()
   const show = useSelector(state => state.sidebarShow)
-  const [privileges] = useState('operator')
+  const [privileges] = useState('admin')
 
   return (
     <CSidebar
