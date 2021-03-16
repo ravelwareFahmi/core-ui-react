@@ -123,7 +123,7 @@ CoreUI-React#v3.0.0
 │   ├── App.test.js
 │   ├── polyfill.js
 │   ├── index.js
-│   ├── routes.js    #routes config
+│   ├── routesAdmin.js    #routesAdmin config
 │   └── store.js     #template state example 
 │
 └── package.json

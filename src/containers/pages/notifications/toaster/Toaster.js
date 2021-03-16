@@ -36,7 +36,7 @@ const Toaster = () => {
   const [toasts, setToasts] = useState([
     { position: 'static'},
     { position: 'static'},
-    { position: 'top-right', autohide: 3000 }
+    { position: 'top-right', autohide: 300000 }
   ])
 
   const [position, setPosition] = useState('top-right')

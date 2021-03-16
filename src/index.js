@@ -10,7 +10,8 @@ import * as serviceWorker from './serviceWorker';
 import { icons } from './assets/icons'
 
 import { Provider } from 'react-redux'
-import store from './store'
+import {store} from './config/redux'
+
 
 React.icons = icons
 
