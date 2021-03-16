@@ -6,28 +6,20 @@ import {
 } from 'react-router-dom'
 import { CContainer, CFade } from '@coreui/react'
 // routesAdmin config
-import {routesAdmin, routesAdminOperator} from '../../../routes'
 import Spinner from 'src/component/molecules/Spinner'
-
+import { userPrivileges } from 'src/resuableFunction/userPrivileges'
 
 const TheContent = () => {
   const [login] = useState(true)
   const [userNow] = useState('operator')
 
-  const userPrivileges = () => {
-    if (userNow === 'admin') {
-      return routesAdmin
-    } else {
-      return routesAdminOperator
-    }
-  }
-  
+
   return (
     <main className="c-main">
       <CContainer fluid>
         <Suspense fallback={<Spinner />}>
           <Switch>
-            { userPrivileges().map((route, idx) => {
+            { userPrivileges(userNow).map((route, idx) => {
               return route.component && (
                 <Route
                   key={idx}
