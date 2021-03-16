@@ -75,7 +75,6 @@ const _nav_operator =  [
 ]
 
 const privilegesMenu = (role) => {
-
   if (role === 'admin') {
     return (
       _nav_admin

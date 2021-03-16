@@ -7,12 +7,11 @@ import {
 import { CContainer, CFade } from '@coreui/react'
 // routesAdmin config
 import Spinner from 'src/component/molecules/Spinner'
-import { roleRoutes } from 'src/resuableFunction/roleRoutes'
+import { roleRoutes } from 'src/reusableFunction/CheckPrivileges'
 
 const TheContent = () => {
   const [login] = useState(true)
   const [userNow] = useState('admin')
-
 
   return (
     <main className="c-main">
