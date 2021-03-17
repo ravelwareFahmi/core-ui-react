@@ -13,8 +13,8 @@ import {
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-// routesAdmin config
-import {routesAdmin} from '../../../routes'
+// routesadmin config
+import {routesadmin} from '../../../routes'
 
 import { 
   TheHeaderDropdown,
@@ -75,7 +75,7 @@ const TheHeader = () => {
       <CSubheader className="px-3 justify-content-between">
         <CBreadcrumbRouter 
           className="border-0 c-subheader-nav m-0 px-0 px-md-3" 
-          routesAdmin={routesAdmin} 
+          routesadmin={routesadmin} 
         />
           <div className="d-md-down-none mfe-2 c-subheader-nav">
             <CLink className="c-subheader-nav-link"href="#">

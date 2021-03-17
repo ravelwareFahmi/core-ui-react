@@ -38,7 +38,7 @@ const Widgets = React.lazy(() => import('./containers/pages/widgets/Widgets'));
 const Users = React.lazy(() => import('./containers/pages/users/Users'));
 const User = React.lazy(() => import('./containers/pages/users/User'));
 
-export const routesAdminOperator = [
+export const routesoperator = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/buttons', name: 'Buttons', component: Buttons, exact: true },
@@ -61,7 +61,7 @@ export const routesAdminOperator = [
   { path: '/users/:id', exact: true, name: 'User Details', component: User }
 ]
 
-export const routesAdmin = [
+export const routesadmin = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },

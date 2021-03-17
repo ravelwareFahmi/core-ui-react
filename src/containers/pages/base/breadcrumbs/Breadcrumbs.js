@@ -11,7 +11,7 @@ import {
   CRow
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
-import {routesAdmin} from '../../../../routes'
+import {routesadmin} from '../../../../routes'
 
 
 const Breadcrumbs = () => {
@@ -25,7 +25,7 @@ const Breadcrumbs = () => {
           </CCardHeader>
           <CCardBody>
             <h6>CBreadcrumbRouter wrapper component</h6>
-            <CBreadcrumbRouter routesAdmin={routesAdmin}/>
+            <CBreadcrumbRouter routesadmin={routesadmin}/>
             <h6>Manual</h6>
             <CBreadcrumb>
               <CBreadcrumbItem>

@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Spinner from './component/molecules/Spinner';
+import Spinner from './component/molecules/spinner';
 import './scss/style.scss';
 
 // Containers

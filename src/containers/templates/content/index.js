@@ -5,9 +5,9 @@ import {
   Switch
 } from 'react-router-dom'
 import { CContainer, CFade } from '@coreui/react'
-// routesAdmin config
-import Spinner from 'src/component/molecules/Spinner'
-import { roleRoutes } from 'src/reusableFunction/CheckPrivileges'
+// routesadmin config
+import Spinner from 'src/component/molecules/spinner'
+import { roleRoutes } from 'src/reusableFunction/check-privileges'
 
 const TheContent = () => {
   const [login] = useState(true)

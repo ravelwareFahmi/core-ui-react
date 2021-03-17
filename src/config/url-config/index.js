@@ -1,0 +1,2 @@
+export const baseUrl = `http://${process.env.REACT_APP_API_HOST}:${process.env.REACT_APP_API_PORT}`;
+export const baseUrlSocket = `http://${process.env.REACT_APP_API_HOST}:${process.env.REACT_APP_SOCKET_PORT}`;
